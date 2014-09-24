@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>e-sites fronteers bijeenkomst 26-03-14</title>
+
+		<meta name="description" content="e-sites fronteers bijeenkomst 26-03-14, een kijk in de front-end keuken.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/esites.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/dark.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-state="esites-welcome">
+					<h1>e-sites</h1>
+					<h3>een kijk in de front-end keuken</h3>
+					<img src="img/dev.jpg" alt="">
+					<p>
+						door: <a href="http://twitter.com/_boye">@_boye</a> / <a href="http://twitter.com/johnvanhulsen">@johnvanhulsen</a> / <a href="http://twitter.com/iain_vdw">@iain_vdw</a>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>2006</h2>
+						<img src="img/blushuis.jpg" alt="">
+					</section>
+					<section>
+						<h2>De keuken toen...</h2>
+						<img src="img/keuken-blushuis.jpg" alt="" width="80%">
+					</section>
+					<section>
+						<h2>Kwaliteit kon beter</h2>
+						<h3>Lekker bordje tagsoup...iemand?</h3>
+						<img src="img/tagsoup.jpg" alt="">
+					</section>
+					<section>
+						<h2>2008: eigen afdeling</h2>
+						<ul>
+							<li>3 ontwikkelaars</li>
+							<li>Voorheen diverse disciplines (incl. design, flash en mobile)</li>
+							<li>Nu sec front-end development</li>
+							<li>Focus op standaardisatie</li>
+							<li>Code afspraken</li>
+							<li>Meetings / uitjes / conferenties</li>
+							<li>Kennissessies</li>
+						</ul>
+					</section>
+					<section>
+						<h2>De keuken anno 2014</h2>
+						<img src="img/keuken-nu.jpg" alt="" width="80%">
+					</section>
+				</section>
+
+				<section>
+					<h2>Topics</h2>
+					<ul>
+						<li>Code afspraken</li>
+						<li>Tooling</li>
+						<li>Standaardisatie</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Code afspraken</h2>
+						<img src="img/chuck.jpg" alt="">
+					</section>
+					<section>
+						<h2>Waarom?</h2>
+						<p>Eenheid in de broncode die we opleveren om zo de onderhoudbaarheid te verbeteren en de kwaliteit te bewaken.</p>
+					</section>
+					<section>
+						<h2>Historie</h2>
+					</section>
+					<section>
+						<img src="http://afbeeldingen.gahetna.nl/naa/thumb/1280x1280/802e4028-40f7-410e-4fc7-3a158b7f1e81.jpg" alt="">
+					</section>
+					<section>
+						<h2>Maar dan 258 jaar later</h2>
+						<ul>
+							<li>Rond 2009 de eerste versie opgesteld door Joris en Boye</li>
+							<li>Vroeger in een Word documentje</li>
+							<li>Inmiddels online: <a href="http://frontend.e-sites.nl/afspraken.html" target="_blank">frontend.e-sites.nl/afspraken.html</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Levend document</h2>
+						<ul>
+							<li>De inhoud wordt besproken tijdens front-end meetings</li>
+							<li>Of tijdens langere meetings. 's avonds, met pizza en een biertje</li>
+							<li>Van het team, voor het team<span class="fragment roll-in">, ook voor back-end developers</span></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Onderdelen</h2>
+						<ul>
+							<li>Algemene zaken (zoals browser ondersteuning)</li>
+							<li>HTML, CSS en JavaScript</li>
+							<li>Mobile</li>
+							<li>Performance</li>
+							<li>Toegankelijkheid</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Toekomstplannen</h2>
+						<ul>
+							<li>Nu: opsomming van regeltjes</li>
+							<li>Toekomst: <a href="http://mdo.github.io/code-guide/" target="_blank">meer focus op de content</a></li>
+							<li>Prettiger leesbaar</li>
+							<li>Duidelijkere code voorbeelden</li>
+							<li>Meertalig</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Algemeen</h2>
+						<p>Een aantal highlights uit de inhoud</p>
+					</section>
+					<section>
+						<h2>Browser ondersteuning</h2>
+						<p>De uitgewerkte pagina’s dienen exact conform het ontwerp te zijn in de laatste twee stabiele versies van de volgende desktopbrowsers:</p>
+						<ul class="fragment roll-in">
+							<li>Internet Explorer</li>
+							<li>Mozilla Firefox (Win/Mac)</li>
+							<li>Google Chrome (Win/Mac)</li>
+							<li>Safari (Mac)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>én mobile</h2>
+						<ul>
+							<li>Mobile Safari op iPhone/iPod touch en iPad (vanaf iOS6)</li>
+							<li>Android Internet Browser (vanaf Android 4.1.2)</li>
+							<li>Mobile IE9+</li>
+							<li>Google Chrome voor iOS en Android</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Maar ook</h2>
+						<p>Zorgen dat de pagina’s er ook in de volgende browsers goed uit ziet<br> en werkt op:</p>
+						<ul>
+							<li>Andere mobiele apraten en oudere software versies</li>
+							<li>IE8 &amp; IE9 (uitzondering op de regel)</li>
+							<li>Opera</li>
+					</section>
+					<section>
+						<h2>IE?</h2>
+						<p>Ja, Internet Explorer ;)</p>
+						<p>Maar ja: Ook IE (vanaf) versie 7 en 8 ondersteunen we. Niet zo mooi als vroeger, maar we zorgen dat het leesbaar is en dat cruciale dingen werken.</p>
+						<p>Met <a href="http://www.modern.ie/en-us/" target="_blank">modern.ie</a> is het eenvoudig testen.</p>
+						<p>&nbsp;</p>
+						<p class="fragment roll-in">Wat ondersteunen jullie?</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>CSS Standaarden</h2>
+						<ul class="fragment roll-in">
+							<li>LESS</li>
+							<li>Componenten opzet</li>
+							<li>Notatie / selectors</li>
+						</ul>
+					</section>
+					<section>
+						<h2>LESS</h2>
+						<ul class="fragment roll-in">
+							<li>Wat is LESS?</li>
+							<li>Waarom LESS?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Componenten</h2>
+						<ul class="fragment roll-in">
+							<li>Losse .less file per component<br>
+								<small>Moedigt hergebruik aan</small>
+							</li>
+							<li>Media queries opnemen in component file</li>
+							<li>Basis voor onze Distillery<br>
+								<small>Ons eigen framework, gebaseerd op componenten</small>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Notatie en selectors</h2>
+						<p>Zo kort mogelijke selectors<br>
+							<small>Max 3 niveaus diep</small><br>
+							<pre><code>/* Bad */
+ul#news-list > li li a span {}</code></pre>
+							<div class="text-center">versus</div>
+							<pre><code>/* Much better */
+.news-list .item-text {}</code></pre>
+						</p>
+					</section>
+					<section>
+						<h2>Notatie en selectors</h2>
+						<p>G&eacute;&eacute;n ID's in selectors
+						</p>
+						<div class="fragment roll-in">
+							<small>Nee, echt niet.</small><br>
+							<img src="http://static.comicvine.com/uploads/original/11112/111121967/3436205-7911963661-no-no.gif">
+						</div>
+					</section>
+					<section>
+						<h2>Notatie en selectors</h2>
+						<p>Eerst mixins, daarna reguliere properties</p>
+							<pre><code>.foo {
+    .left();
+    .border-box();
+    border: 2px solid #bada55;
+    font-weight: bold;
+    text-decoration: underline;
+}</code></pre>
+					</section>
+					<section>
+						<h2>Your thoughts?</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>JavaScript</h2>
+						<img src="img/js-logo.png" alt="" width="400">
+					</section>
+					<section>
+						<h2>Werkwijze</h2>
+						<ul>
+							<li>Non-blocking: voor de <code>&lt;/body&gt;</code></li>
+							<li>Progressive enhancement</li>
+							<li>Unobtrusive</li>
+							<li>Functies en events gescheiden</li>
+							<li>Strict mode</li>
+							<li>Vermijd globale variabelen</li>
+							<li>Logica verdelen in (kleine) losse functies (#perfmatters)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Notatie</h2>
+						<ul>
+							<li><a href="https://contribute.jquery.org/style-guide/js/" target="_blank">jQuery Core Style Guidelines</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Documentatie</h2>
+						<h3>JSdoc</h3>
+						<pre><code>/** 
+ * Gets the current foo
+ *
+ * @author Naam Developer &lt;voornaam@e-sites.nl&gt;
+ * @param {string} foo
+ * @return {number} new ID for foo
+ */</code></pre>
+						<h3>Inline</h3>
+						<pre><code>// Hier een beschrijvend stukje commentaar</code></pre>
+					</section>
+					<section>
+						<h2>jQuery</h2>
+						<ul>
+							<li>2.1.0 voor moderne browsers / IE9+ en 1.11.0 voor IE&lt;9</li>
+							<li>Zepto.js voor mobile, óf custom jQuery build</li>
+							<li>
+								Event listeners altijd via <code>.on()</code> (geen aliases)
+								<pre><code>$('#selector').on('click', handler); // event listener
+$('#group').on('click', '.btn', handler); // event delegation</code></pre>
+							</li>
+							<li>Qua <code>$('.selectors')</code> gelden de CSS guidelines</li>
+							<li>Bij twijfel welke methods 't snelst zijn: <a href="http://jsperf.com/search?q=jquery" target="_blank">jsperf.com</a></li>
+							<li>jQuery sets cachen en prefixen: <code>$self = $(this);</code></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Toekomstplannen</h2>
+						<ul>
+							<li>Functions.js / events.js over boord</li>
+							<li>Overstap naar AMD architectuur</li>
+							<li>Met behulp van Require.js</li>
+							<li>R.js optimizer verankeren in deployment</li>
+							<li>Unit testing</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Your thoughts?</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Tooling</h2>
+						<img src="img/tools.jpg" alt="">
+					</section>
+					<section>
+						<h2>devtools.esites</h2>
+						<ul>
+							<li>Intern portaal</li>
+							<li>Error logging</li>
+							<li>Cronitor</li>
+							<li>Deployment</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CLI tools</h2>
+						<ul>
+							<li><a href="http://dotfiles.github.io/" target="_blank">Dotfiles</a></li>
+							<li>SVN aliases (status, commit, update)</li>
+							<li>JSHint commit-hook</li>
+							<li>Glue *</li>
+							<li>Grunt</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Minify library</h2>
+						<ul>
+							<li><a href="https://code.google.com/p/minify/" target="_blank">PHP5 library</a></li>
+							<li>Groepen configureren in minifyConfig.php</li>
+							<li>Voegt bestanden samen + minification</li>
+							<li>Uitfasering in volle gang</li>
+							<li>Verankeren in publicatie proces</li>
+							<li>Server config obv <a href="http://developer.yahoo.com/performance/index.html#rules" target="_blank">Yahoo!'s Rules for High Performance Web Sites</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Sitemanager 5 admin</h2>
+						<ul>
+							<li>Beheer van klanten en hun sites</li>
+							<li>Aanmaken en configureren sites</li>
+							<li>Modules en diens opties selecteren</li>
+							<li>Hosting pakket instellen</li>
+							<li>Google Analytics statistieken</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Default site</h2>
+						<ul>
+							<li>Scaffolding van al onze (nieuwe) sites</li>
+							<li>Standaard back-end en front-end componenten</li>
+							<li>Evolueert continu</li>
+							<li>Standaard mappenstructuur</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Adobe Fireworks</h2>
+						<p>We &lt;3 Fireworks</p>
+					</section>
+					<section>
+						<h2>GLUE</h2>
+						<p>"Sprites maken is een ambacht, dat moeten we in stand houden"<br>
+							- John van Hulsen, 2011
+						</p>
+						<ul>
+							<li>Maar toch, <a href="http://glue.readthedocs.org/" target="_blank">Glue</a> is erg handig!</li>
+							<li>Nieuwe of andere afbeeldingen?<br>
+								Genereer eenvoudig een nieuwe sprite</li>
+							<li>Geen omkijken naar positie, ruimte of de pixels</li>
+							<li>Output CSS (of LESS, of Sass)</li>
+							<li>Voor de mensen zonder Glue: <a href="http://10.76.107.73/glue/" target="_blank">GlueWi</a></li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/fronteers-logo-300dpi.png" alt="" class="fronteers-logo">
+						<p class="fragment roll-in"><strong>44%</strong>, 14kB vs. 8kB</p>
+						<img src="img/fronteers-logo-300dpi-small.png" alt="" class="fronteers-logo">
+					</section>
+					<section>
+						<h2>ImageAlpha</h2>
+						<p><a href="http://pngmini.com" target="_blank">pngmini.com</a></p>
+						<img src="img/imagealpha.png" alt="" class="no-styles">
+					</section>
+					<section>
+						<h2>ImageOptim</h2>
+						<p><a href="http://imageoptim.com" target="_blank">imageoptim.com</a></p>
+						<p>Het kan nog kleiner</p>
+						<img src="img/imageoptim.png" alt="" class="no-styles">
+					</section>
+					<section>
+						<h2>IDE's</h2>
+						<p>Sublime? Aptana Studio? Atom? Web/PHP Storm?<br>Notepad? Coda? Espresso? Dreamweaver? Iets anders?</p>
+						<p>Welke editor gebruik jij?</p>
+					</section>
+					<section>
+						<h2>Mobile testbak</h2>
+						<p>Icm Adobe Edge Inspect</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Standaardisatie</h2>
+						<img src="img/code.jpg" alt="">
+					</section>
+					<section>
+						<h2>Proces</h2>
+						<ul>
+							<li>Brainstorms / meetings</li>
+							<li>Generiek ontwikkelen tijdens projecten *</li>
+							<li>Code reviews</li>
+							<li>Pushen naar Distillery of GitHub</li>
+						</ul>
+					</section>
+					<section>
+						<h2>GitHub</h2>
+						<a href="https://github.com/orgs/e-sites/dashboard" target="_blank"><img src="http://xaharts.org/funny/i/gitopuss/github-octocat_yes-we-code.jpg" alt="" width="500"></a>
+					</section>
+					<section>
+						<h2>GitHub richtlijnen</h2>
+						<ul>
+							<li>Generiek van opzet</li>
+							<li><a href="http://frontend.e-sites.nl/afspraken.html#js" target="_blank">Nette en consistente coding stijl</a></li>
+							<li>Index.html met demo's</li>
+							<li>Online beschikbaar op: github.e-sites.nl/scriptnaam</li>
+							<li>Conform de JSHint richtlijnen</li>
+							<li>Minified productie versie aanwezig</li>
+							<li>Engelse README.md file met beknopte documentatie van het script</li>
+							<li>Unit tests zijn aanwezig</li>
+						</ul>
+					</section>
+					<section>
+						<h2>JSend</h2>
+						<p>Standaardisatie van JSON responses</p>
+						<ul class="fragment roll-in">
+							<li>Gebaseerd op de <a href="http://labs.omniti.com/labs/jsend">JSend spec van OmniTI Labs</a></li>
+							<li>Spec definieert 2 verplichte properties in response</li>
+							<li>3 status codes: success, fail en error</li>
+							<li><a href="https://github.com/e-sites/esl/blob/master/src/ESL/Jsend.php" target="_blank">PHP class beschikbaar</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>JSend</h2>
+						<p>Hoe ziet zo'n response eruit?</p>
+						<div class="fragment roll-in">
+							<pre><code>{
+    "status": "success",
+    "data": {
+        "foo": "bar",
+        "baz": 1337,
+        "list": [true, false, "abc"]
+    }
+}</code></pre>
+						</div>
+					</section>
+					<section>
+						<h2>JSend</h2>
+						<p>Toekomstplannen v2.0</p>
+						<ul class="fragment roll-in">
+							<li>Complete re-write</li>
+							<li>Meer consistentie: 1 aanroep, geen onnodige aliases</li>
+							<li>Modulaire opzet</li>
+							<li>Asynchronous/Promises</li>
+							<li>Geen jQuery dependency > lightweight</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Perimeter.js</h2>
+						<ul>
+							<li>Creërt onzichtbaar kader rondom een DOM element <br> mbv <code>Element.getBoundingClientRect()</code></li>
+							<li>Registreert 'breaches' zodra men met de cursor in dit kader komt</li>
+							<li>Lightweight; (~0.6kb minified / gzipped)</li>
+							<li>Geen dependencies</li>
+							<li>Ingebouwde debugger (<a href="https://github.com/e-sites/perimeter.js/blob/master/src/boundary.js" target="_blank">boundary.js</a>)</li>
+							<li><a href="http://github.e-sites.nl/perimeter.js/" target="_blank">Uitgebreid gedocumenteerd</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Zepto Builder</h2>
+						<ul>
+							<li><a href="http://github.e-sites.nl/zeptobuilder/" target="_blank">Custom Zepto.js builds</a></li>
+							<li>Voor degene die liever niet via CLI werken</li>
+							<li>Pakt autom. de meest recente modules uit de Zepto repo</li>
+							<li>Minification via de browser build van Uglify</li>
+							<li>Lokaal opslaan via de FileSystem API</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Zepto Builder</h2>
+						<h3>Onder de motorkap</h3>
+						<ul>
+							<li>Volledig client-side (geen node.js)</li>
+							<li><a href="http://topcoat.io/" target="_blank">Topcoat</a> gebruikt voor de interface</li>
+							<li>Require.js architectuur (incl. optimizer)</li>
+							<li>GitHub API calls via JSONP</li>
+							<li>Caching via <code>window.sessionStorage</code></li>
+							<li>IE9+ support</li>
+							<li>Grunt tasks &amp; Bower package management</li>
+							<li><a href="http://www.e-sites.nl/blog/347-zepto-builder-van-idee-tot-uitwerking.html" target="_blank">Totstandkoming</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>e-sites Distillery</h2>
+						<img src="img/distillery.jpg" alt="">
+						<p>DRY... Dus we bouwen een 'plank' met herbruikbaar materiaal</p>
+						<ul>
+							<li>Codebase van HTML, CSS en JavaScript snippets</li>
+							<li>Zelfgebouwde kleine componenten</li>
+							<li>Zeer gering gestyled</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Component viewer</h2>
+						<p><a href="http://distillery.dev/" target="_blank">KLIK.</a></p>
+					</section>
+					<section>
+						<h2>Ooit op Github: Sambuca</h2>
+						<img src="img/sambuca.jpg" alt="" width="70%">
+						<p>Als we vinden dat het het klaar is.</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Endex</h1>
+					<img src="img/tom.jpg" alt="">
+					<h3>Vragen?</h3>
+					<p><small>PS we zoeken nog een toegewijde front-end developer!</small></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<a href="http://www.e-sites.nl/" title="e-sites internetbureau in Breda . overtreft online" id="esites" target="_blank">e-sites internetbureau in Breda . overtreft online</a>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
